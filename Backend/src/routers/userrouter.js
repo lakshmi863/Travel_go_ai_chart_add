@@ -10,7 +10,7 @@ router.post("/register", validateRegistration, registerUser);
 // LOGIN
 router.post("/login", loginUser);
 
-// PROTECTED ROUTE
+// PROTECTED ROUTEs
 router.get("/profile", verifyToken, (req, res) => {
   res.json({
     success: true,
