@@ -70,7 +70,7 @@ const bookingLimiter = rateLimit({
 // ---------------------------------------------------------
 app.use(helmet()); 
 app.use(cors({
-    origin: ["http://localhost:3000", "https://travelgo-front.onrender.com"],
+    origin: ["http://localhost:3000", "https://travel-go-ai-frontend.onrender.com"],
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true
